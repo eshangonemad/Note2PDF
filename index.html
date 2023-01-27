@@ -14,7 +14,7 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body bg='no.jpg'>
+<body onload='mavi()'>
  
   <script src="script.js"></script>
 <div class="center">
@@ -30,8 +30,13 @@
   <input type='text'id='title'placeholder='Title'> 
   <br><br>
   <textarea placeholder="Content Goes Here..." id="textarea"></textarea>
-  <input type="file" onchange="encodeImageFileAsURL(this)" multiple='multiple' accept="image/*" />
-  <br>
+  <input type="file" onchange="encodeImageFileAsURL(this)" id='1' accept="image/*" /><br>
+  <input type="file" onchange="q(this)" id='2' accept="image/*" /><br><!--
+  <input type="file" onchange="encodeImageFileAsURL(this)" id='3' accept="image/*" /><br>
+  <input type="file" onchange="encodeImageFileAsURL(this)" id='4' accept="image/*" /><br>
+  <input type="file" onchange="encodeImageFileAsURL(this)" id='5' accept="image/*" /><br>
+  <input type="file" onchange="encodeImageFileAsURL(this)" id='6' accept="image/*" />
+  <br>-->
   <a href="javascript:createPDF()"><div class="myButt" class='cente'> Download</div></a></center>
  <!--
   This script places a badge on your repl's full-browser view back to your repl's cover
